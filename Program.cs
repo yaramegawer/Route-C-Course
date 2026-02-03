@@ -16,7 +16,7 @@ namespace CSharpAssignment
             Console.WriteLine("║                      20 Questions                                  ║");
             Console.WriteLine("╚════════════════════════════════════════════════════════════════════╝\n");
 
-          
+
 
             #region Question 1: Regions
             // ══════════════════════════════════════════════════════════════════════
@@ -25,12 +25,16 @@ namespace CSharpAssignment
             //
             // Q: What is the purpose of #region and #endregion directives in C#? 
             //    How do they help in code organization?
-            //
+            //The #region and #endregion directives in C# are used to define a collapsible section of code in editors like Visual Studio.
+            //    Their main purpose is to help organize and manage large code files by allowing developers to group related code blocks together,
+            //    which can then be expanded or collapsed for easier navigation.
+            ////
             // ══════════════════════════════════════════════════════════════════════
 
             //Nested Region Example
-
+            #region Nested Region Example
             Console.WriteLine("\n" + new string('-', 70) + "\n");
+            #endregion
             #endregion
 
             #region Question 2: Variable Declaration - Explicit vs Implicit
@@ -40,16 +44,20 @@ namespace CSharpAssignment
             //
             // Q: What is the difference between explicit and implicit variable 
             //    declaration in C#? Provide examples of both.
+            //  explicit declaration is when you specify the data type of a variable at the time of declaration,
+            //  while implicit declaration uses the 'var' keyword, allowing the compiler to infer the type based on the assigned value.
             //
             // ══════════════════════════════════════════════════════════════════════
 
-        
+
 
             // EXPLICIT DECLARATION 
-        
+            int explicitVar = 10;
+
 
             // IMPLICIT DECLARATION 
-           
+            var implicitVar = "Hello, World!";
+
             #endregion
 
             #region Question 3: Constants
@@ -59,13 +67,16 @@ namespace CSharpAssignment
             //
             // Q: Write the syntax for declaring a constant in C#. Why would you use 
             //    a constant instead of a regular variable?
+            // A constant in C# is declared using the 'const' keyword followed by the data type, name, and value.
+            // Constants are used instead of regular variables when you want to ensure that the value remains unchanged throughout the program,
             //
             // ══════════════════════════════════════════════════════════════════════
 
-       
+
 
             // Constant examples
-           
+            const double Pi = 3.14159;
+
             #endregion
 
             #region Question 4: Class-level vs Method-level Scope
@@ -75,10 +86,13 @@ namespace CSharpAssignment
             //
             // Q: Explain the difference between class-level scope and method-level 
             //    scope with examples.
+            // A variable with class-level scope (also known as a field) is accessible from any method within the class,
+            // while a variable with method-level scope (also known as a local variable) is only accessible within the method it is declared in.
+
             //
             // ══════════════════════════════════════════════════════════════════════
 
-        
+
             #endregion
 
             #region Question 5: Block-level Scope
@@ -88,9 +102,16 @@ namespace CSharpAssignment
             //
             // Q: What is block-level scope? Give an example showing a variable that 
             //    is only accessible within a specific block.
+            // A variable with block-level scope is declared within a pair of curly braces {} and is only accessible within that block.
             //
             // ══════════════════════════════════════════════════════════════════════
 
+            if (true)
+            {
+                // Block-level scope variable
+                int blockVar = 50;
+                Console.WriteLine($"Block-level variable inside block: {blockVar}");
+            }
             #endregion
 
             #region Question 6: Variable Lifetime - Local vs Static
@@ -100,10 +121,13 @@ namespace CSharpAssignment
             //
             // Q: What is variable lifetime? Explain the lifetime of local variables 
             //    vs static variables.
+            // A variable's lifetime refers to the duration for which the variable exists in memory during program execution.
+            // A local variable's lifetime is limited to the execution of the method in which it is declared,
+            // while a static variable's lifetime spans the entire duration of the program, retaining its value between method calls.
             //
             // ══════════════════════════════════════════════════════════════════════
 
-         
+
             #endregion
 
             #region Question 7: Garbage Collector
@@ -113,6 +137,8 @@ namespace CSharpAssignment
             //
             // Q: What is the Garbage Collector in C#? How does it affect the 
             //    lifetime of objects?
+            // A: The Garbage Collector (GC) in C# is an automatic memory management feature that
+            //    periodically frees up memory occupied by objects that are no longer in use or referenced by the application.
             //
             // ══════════════════════════════════════════════════════════════════════
 
@@ -126,6 +152,9 @@ namespace CSharpAssignment
             //
             // Q: What is variable shadowing in C#? Does C# allow shadowing in 
             //    nested blocks within the same method?
+            // A: Variable shadowing occurs when a variable declared in the inner scope
+            //    has the same name as a variable in an outer scope, effectively "hiding" the outer variable within the inner scope.
+            //  No it does not allow shadowing in nested blocks within the same method.
             //
             // ══════════════════════════════════════════════════════════════════════
 
@@ -137,18 +166,26 @@ namespace CSharpAssignment
             // ══════════════════════════════════════════════════════════════════════
             //
             // Q: List five rules that must be followed when naming variables in C#.
+            // A: 1. Variable names must start with a letter or an underscore (_).
+            //    2. Variable names can only contain letters, digits, and underscores.
+            //    3. Variable names cannot be the same as C# reserved keywords.
+            //    4. Variable names are case-sensitive.
+            //    5. Variable names should be descriptive and meaningful.
+            //      
             //
             // ══════════════════════════════════════════════════════════════════════
 
             #endregion
-
             #region Question 10: Naming Conventions
             // ══════════════════════════════════════════════════════════════════════
-            // QUESTION 10: NAMING CONVENTIONS
+            //QUESTION 10: NAMING CONVENTIONS
             // ══════════════════════════════════════════════════════════════════════
             //
             // Q: What naming conventions are recommended for: (a) local variables, 
             //    (b) class names, (c) constants?
+            // A: (a) Local variables: camelCase (e.g., myVariable)
+            //    (b) Class names: PascalCase (e.g., MyClass)
+            //    (c) Constants: PascalCase  (e.g., MyConstant )
             //
             // ══════════════════════════════════════════════════════════════════════
             #endregion
@@ -234,7 +271,7 @@ namespace CSharpAssignment
             //
             // ══════════════════════════════════════════════════════════════════════
 
-          
+
             #endregion
 
             #region Question 18: Value Types vs Reference Types
@@ -263,9 +300,9 @@ namespace CSharpAssignment
 
         }
 
-        
-        #endregion
+
+#endregion
     }
 
-    
+
 }
