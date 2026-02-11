@@ -1,0 +1,5 @@
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\Assignment\obj\Debug\net8.0\Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\Assignment\obj\Debug\net8.0\Assignment.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\Assignment\obj\Debug\net8.0\Assignment.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\Assignment\obj\Debug\net8.0\Assignment.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\Assignment\obj\Debug\net8.0\Assignment.sourcelink.json

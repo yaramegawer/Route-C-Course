@@ -197,7 +197,35 @@ namespace CSharpAssignment
             //
             // Q: Compare and contrast syntax errors, runtime errors, and logical 
             //    errors. Provide an example of each.
-            //
+
+
+            //Definition: Errors caused by violating the rules of the programming language grammar. The code cannot be compiled or interpreted.
+
+            // When detected: Usually detected at compile-time or before execution.
+
+            // Example: Missing a comma or a keyword.
+
+            //SELECT FirstName LastName FROM Researcher; --Missing comma between columns(Syntax error)
+
+            //2.Runtime Errors
+
+            //Definition: Errors that occur while the program is running, causing it to crash or behave unexpectedly.
+
+            //When detected: During execution.
+
+            //Example: Dividing by zero or accessing a null object.
+
+            //SELECT 10 / 0 AS Result; --Runtime error: division by zero
+
+            //3.Logical Errors
+
+            //Definition: The code runs without crashing but produces incorrect or unintended results due to flawed logic.
+
+            //When detected: Only when the program behaves incorrectly or results are wrong.
+
+            //Example: Using WHERE Age > 30 when you meant Age >= 30.
+
+            //SELECT * FROM Researcher WHERE Age > 30; --Might exclude researchers exactly 30 year
             // ══════════════════════════════════════════════════════════════════════
 
             #endregion
@@ -209,6 +237,12 @@ namespace CSharpAssignment
             //
             // Q: Why is exception handling important in C#? What would happen if 
             //    you don't handle exceptions?
+
+            //Ans
+            //Exception handling is important in C# because it allows programs to gracefully handle unexpected errors or conditions without crashing abruptly.
+            //    By catching and managing exceptions, developers can provide meaningful error messages, perform necessary cleanup, and maintain application stability. 
+            //    Without exception handling, unhandled errors cause the program to terminate unexpectedly, leading to poor user experience and potential data loss. 
+            //    Therefore, proper exception handling improves reliability and robustness of applications.
             //
             // ══════════════════════════════════════════════════════════════════════
 
@@ -225,6 +259,18 @@ namespace CSharpAssignment
             //
             // ══════════════════════════════════════════════════════════════════════
 
+            try {                
+                int result = 10 / 0; 
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine($"Caught an exception: {ex.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("This block executes regardless of whether an exception was thrown or caught.");
+            }
+
             #endregion
 
             #region Question 14: Common Built-in Exceptions
@@ -234,6 +280,11 @@ namespace CSharpAssignment
             //
             // Q: List and explain five common built-in exceptions in C# with 
             //    scenarios when each would occur.
+            //1. NullReferenceException: Occurs when you try to access a member on a null object reference.
+            //2. IndexOutOfRangeException: Occurs when you try to access an index that is outside the bounds of an array or collection.
+            //3. DivideByZeroException: Occurs when you attempt to divide an integer by zero.
+            //4. FormatException: Occurs when a string is not in the correct format for parsing.
+            //5. InvalidOperationException: Occurs when a method call is invalid for the object's current state.
             //
             // ══════════════════════════════════════════════════════════════════════
             #endregion
@@ -245,64 +296,107 @@ namespace CSharpAssignment
             //
             // Q: Why is the order of catch blocks important when handling multiple 
             //    exceptions? Write code showing correct ordering.
-            //
-            // ══════════════════════════════════════════════════════════════════════
+            // A: The order of catch blocks is important because C# evaluates them from top to bottom, and the first block that matches the exception type will be executed.
+            //    If a more general exception type is placed before a more specific one, the specific catch block will never be reached, leading to incorrect exception handling.
+            //    Correct ordering ensures that specific exceptions are caught before general ones, allowing for more precise error handling.
+            // Example of correct ordering:
+            try
+            {
+                             
+                int result = 10 / 0; 
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine($"Caught a DivideByZeroException: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Caught a general exception: {ex.Message}");
+                //
+                // ══════════════════════════════════════════════════════════════════════
 
-            #endregion
+                #endregion
 
-            #region Question 16: throw Keyword
-            // ══════════════════════════════════════════════════════════════════════
-            // QUESTION 16: THROW KEYWORD
-            // ══════════════════════════════════════════════════════════════════════
-            //
-            // Q: What is the difference between 'throw' and 'throw ex' when 
-            //    re-throwing an exception? Which one preserves the stack trace?
-            //
-            // ══════════════════════════════════════════════════════════════════════
-            #endregion
+                #region Question 16: throw Keyword
+                // ══════════════════════════════════════════════════════════════════════
+                // QUESTION 16: THROW KEYWORD
+                // ══════════════════════════════════════════════════════════════════════
+                //
+                // Q: What is the difference between 'throw' and 'throw ex' when 
+                //    re-throwing an exception? Which one preserves the stack trace?
+                // A: 'throw' re-throws the current exception while preserving the original stack trace,
+                // allowing you to see where the exception was originally thrown.
+                // 'throw ex' creates a new exception instance and resets the stack trace to the point of the re-throw, losing the original context of where the error occurred.
+                // throw preserves the stack trace, while throw ex does not.
+                //
+                // ══════════════════════════════════════════════════════════════════════
+                #endregion
 
-            #region Question 17: Stack and Heap Memory
-            // ══════════════════════════════════════════════════════════════════════
-            // QUESTION 17: STACK AND HEAP MEMORY
-            // ══════════════════════════════════════════════════════════════════════
-            //
-            // Q: Explain the differences between Stack and Heap memory in C#. 
-            //    What types of data are stored in each?
-            //
-            // ══════════════════════════════════════════════════════════════════════
+                #region Question 17: Stack and Heap Memory
+                // ══════════════════════════════════════════════════════════════════════
+                // QUESTION 17: STACK AND HEAP MEMORY
+                // ══════════════════════════════════════════════════════════════════════
+                //
+                // Q: Explain the differences between Stack and Heap memory in C#. 
+                //    What types of data are stored in each?
+                // A: Stack memory is a region of memory that stores value types and reference type references,
+                // while heap memory is a region that stores reference type objects.
+                // Value types (e.g., int, double, struct) are stored directly on the stack,
+                // while reference types (e.g., class instances, arrays) are stored on the heap, with their references stored on the stack.
+                //
+                // ══════════════════════════════════════════════════════════════════════
 
 
-            #endregion
+                #endregion
 
-            #region Question 18: Value Types vs Reference Types
-            // ══════════════════════════════════════════════════════════════════════
-            // QUESTION 18: VALUE TYPES VS REFERENCE TYPES
-            // ══════════════════════════════════════════════════════════════════════
-            //
-            // Q: Write a code example showing how value types and reference types 
-            //    behave differently when assigned to another variable.
-            //
-            // ══════════════════════════════════════════════════════════════════════
+                #region Question 18: Value Types vs Reference Types
+                // ══════════════════════════════════════════════════════════════════════
+                // QUESTION 18: VALUE TYPES VS REFERENCE TYPES
+                // ══════════════════════════════════════════════════════════════════════
+                //
+                // Q: Write a code example showing how value types and reference types 
+                //    behave differently when assigned to another variable.
+                // A: When a value type is assigned to another variable, a copy of the value is created, and the two variables are independent of each other.
+                // When a reference type is assigned to another variable, both variables reference the same object in memory, and changes to one variable will affect the other.
 
-            #endregion
+                int valueA = 10; // Value type
+                int valueB = valueA; // Copy of valueA
+                valueB = 20; // Changing valueB does not affect valueA
+                console.WriteLine($"ValueA: {valueA}, ValueB: {valueB}"); // Output: ValueA: 10, ValueB: 20
 
-            #region Question 19: Object in C#
-            // ══════════════════════════════════════════════════════════════════════
-            // QUESTION 19: OBJECT IN C#
-            // ══════════════════════════════════════════════════════════════════════
-            //
-            // Q: Why is 'object' considered the base type of all types in C#? 
-            //    What methods does every type inherit from System.Object?
-            //
-            // ══════════════════════════════════════════════════════════════════════
+                int [] arrayA = { 1, 2, 3 }; // Reference type
+                int [] arrayB = arrayA; // Both arrayA and arrayB reference the same array
+                arrayB[0] = 10; // Changing arrayB affects arrayA
+                Console.WriteLine($"ArrayA[0]: {arrayA[0]}, ArrayB[0]: {arrayB[0]}"); // Output: ArrayA[0]: 10, ArrayB[0]: 10
 
-            #endregion
+                //
+                // ══════════════════════════════════════════════════════════════════════
 
-        }
+                #endregion
+
+                #region Question 19: Object in C#
+                // ══════════════════════════════════════════════════════════════════════
+                // QUESTION 19: OBJECT IN C#
+                // ══════════════════════════════════════════════════════════════════════
+                //
+                // Q: Why is 'object' considered the base type of all types in C#? 
+                //    What methods does every type inherit from System.Object?
+                // A: 'object' is considered the base type of all types in C# because every type, whether value or reference, ultimately derives from System.Object.
+                // Every type in C# inherits methods from System.Object, including:
+                // 1. ToString(): Returns a string representation of the object.
+                // 2. Equals(object obj): Determines whether the specified object is equal to the current object.
+                // 3. GetHashCode(): Serves as the default hash function.
+                // 4. GetType(): Gets the Type of the current instance.
+                //
+                // ══════════════════════════════════════════════════════════════════════
+
+                #endregion
+
+            }
 
 
 #endregion
-    }
+        }
 
 
 }
