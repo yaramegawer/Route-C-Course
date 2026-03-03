@@ -1,0 +1,69 @@
+Q1: BankAccount Class and Encapsulation
+
+a) Problems with the design:
+
+Fields Owner and Balance are public, allowing external code to modify them directly.
+
+Withdraw method does not validate the amount; external code can set an invalid balance.
+
+b) How to fix:
+
+Make fields private and expose them via properties.
+
+Add validation in Withdraw to prevent withdrawing more than the balance.
+
+Optionally add a Deposit method for safe balance updates.
+
+c) Why exposing public fields is bad:
+
+Breaks encapsulation, one of the core OOP principles.
+
+Prevents controlling or validating internal state.
+
+Increases tight coupling between classes and external code.
+
+Makes maintenance and future changes harder.
+
+Q2: Field vs Property
+
+Field: a variable declared inside a class or struct; stores data directly.
+
+Property: provides controlled access to fields and can include logic in get and set.
+
+Properties can contain logic, such as validation or calculations.
+
+Example: A read-only property that returns a calculated value, e.g., price with tax.
+
+Q3: Indexer in StudentRegister
+
+a) What is this[int index]?
+
+It is an indexer, allowing an object to be accessed like an array using square brackets.
+
+b) What happens if register[10] = "Ali"; is executed?
+
+It throws an IndexOutOfRangeException because the array only has 5 elements.
+
+How to make it safer: Add bounds checking in the indexer to return null or ignore out-of-range values.
+
+c) Can a class have more than one indexer?
+
+Yes, but indexers must differ by parameter type or number.
+
+Useful when you want to access data in multiple ways, e.g., by index or by name.
+
+Q4: Static Fields and Methods in Order Class
+
+a) What does static mean on TotalOrders?
+
+static means the field belongs to the class itself, not an instance.
+
+It is shared by all instances of the class.
+
+Item is an instance field, unique to each object.
+
+b) Can a static method access Item directly?
+
+No, because Item is an instance field.
+
+Static methods do not have access to instance-specific data without a reference to an object.
