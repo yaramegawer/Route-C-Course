@@ -1,0 +1,14 @@
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\bin\Debug\net8.0\AdvancedC#S01.exe
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\bin\Debug\net8.0\AdvancedC#S01.deps.json
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\bin\Debug\net8.0\AdvancedC#S01.runtimeconfig.json
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\bin\Debug\net8.0\AdvancedC#S01.dll
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\bin\Debug\net8.0\AdvancedC#S01.pdb
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\AdvancedC#S01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\AdvancedC#S01.AssemblyInfoInputs.cache
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\AdvancedC#S01.AssemblyInfo.cs
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\AdvancedC#S01.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\AdvancedC#S01.dll
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\refint\AdvancedC#S01.dll
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\AdvancedC#S01.pdb
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\AdvancedC#S01.genruntimeconfig.cache
+C:\Users\DELL\OneDrive\Desktop\route\C#Files\AdvancedC#S01\AdvancedC#S01\obj\Debug\net8.0\ref\AdvancedC#S01.dll
