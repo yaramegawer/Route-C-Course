@@ -1,0 +1,14 @@
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\bin\Debug\net8.0\Online Store Order Processing.exe
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\bin\Debug\net8.0\Online Store Order Processing.deps.json
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\bin\Debug\net8.0\Online Store Order Processing.runtimeconfig.json
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\bin\Debug\net8.0\Online Store Order Processing.dll
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\bin\Debug\net8.0\Online Store Order Processing.pdb
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\Online Store Order Processing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\Online Store Order Processing.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\Online Store Order Processing.AssemblyInfo.cs
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\Online Store Order Processing.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\Online Store Order Processing.dll
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\refint\Online Store Order Processing.dll
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\Online Store Order Processing.pdb
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\Online Store Order Processing.genruntimeconfig.cache
+C:\Users\DELL\Desktop\route\C#Files\Online Store Order Processing\Online Store Order Processing\obj\Debug\net8.0\ref\Online Store Order Processing.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Online Store Order Processing/1.0.0": {
+        "runtime": {
+          "Online Store Order Processing.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Online Store Order Processing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
