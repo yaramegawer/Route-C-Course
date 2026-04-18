@@ -1,0 +1,14 @@
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\bin\Debug\net8.0\LINQS01.exe
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\bin\Debug\net8.0\LINQS01.deps.json
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\bin\Debug\net8.0\LINQS01.runtimeconfig.json
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\bin\Debug\net8.0\LINQS01.dll
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\bin\Debug\net8.0\LINQS01.pdb
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\LINQS01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\LINQS01.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\LINQS01.AssemblyInfo.cs
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\LINQS01.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\LINQS01.dll
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\refint\LINQS01.dll
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\LINQS01.pdb
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\LINQS01.genruntimeconfig.cache
+C:\Users\DELL\Desktop\route\C#Files\LINQS01\LINQS01\obj\Debug\net8.0\ref\LINQS01.dll
